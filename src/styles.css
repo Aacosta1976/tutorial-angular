@@ -1,0 +1,75 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f7f8;
+  color: #222;
+  padding: 0;
+  margin: 0;
+}
+
+/* TITULOS */
+h1, h2, h3 {
+  color: #333;        /* <- evita títulos azules */
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* PÁRRAFOS */
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* NAVBAR */
+nav {
+  background: #1976d2;
+  padding: 14px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: white !important;     /* <- FORZAMOS blanco */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CONTENIDO CENTRAL */
+.content {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* SECCIONES */
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ENLACES EN EL TEXTO */
+a {
+  color: #1565c0;
+}
+
+a:hover {
+  color: #0d47a1;
+}

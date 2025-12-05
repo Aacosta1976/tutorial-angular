@@ -1,0 +1,83 @@
+/* Tipografía moderna y legible */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar estilo universitario */
+nav {
+  background-color: #003366; /* azul universitario */
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ffcc00; /* dorado como acento */
+}
+
+/* Main content */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Títulos y secciones */
+h1, h2, h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Tarjetas de contenido o ejemplos */
+.card {
+  background-color: #e8f0fe;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #003366;
+}
+
+/* Footer universitario */
+footer {
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: #003366;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+/* Botones estilo tech/universitario */
+button {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ffcc00;
+  color: #003366;
+}

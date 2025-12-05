@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Justificación del Framework</title>
+  <!-- Nota: En Angular, los estilos se enlazan en el TS con styleUrls -->
+</head>
+<body>
+  <!-- Sidebar con índice (visible por defecto) -->
+  <aside class="sidebar">
+    <h3>Índice</h3>
+    <ul>
+      <li><a href="#introduccion">Introducción</a></li>
+      <li><a href="#para-que-sirve">a) ¿Para qué sirve?</a></li>
+      <li><a href="#aplicaciones">b) ¿Qué aplicaciones tiene?</a></li>
+      <li><a href="#lenguajes">c) ¿Sobre qué lenguajes se apoya?</a></li>
+      <li><a href="#prerrequisitos">d) ¿Qué prerrequisitos necesita?</a></li>
+      <li><a href="#conclusion">Conclusión</a></li>
+    </ul>
+  </aside>
+
+  <div class="contenedor">
+      <img src="\images\Imagen2.jpg" alt="Logo">
+  </div> 
+  
+  <!-- Contenedor principal -->
+  <main>
+    <!-- Header en una card destacada -->
+    <section class="card highlight">
+      <header>
+        <h1>Justificación del Framework</h1>
+        <p><em>Documento que responde a las preguntas requeridas: a) ¿Para qué sirve? b) ¿Qué aplicaciones tiene? c) ¿Sobre qué lenguajes se apoya? d) ¿Qué prerrequisitos necesita?</em></p>
+      </header>
+    </section>
+
+    <hr>
+
+    <!-- Sección Introducción -->
+    <section id="introduccion" class="card">
+      <h2>Introducción</h2>
+      <p>
+        La selección de un framework para el desarrollo de una solución software constituye una decisión técnica
+        estratégica cuyo impacto abarca desde la fase de diseño y codificación hasta el despliegue, la operación y el
+        mantenimiento. Un framework no es solo una biblioteca; es un conjunto de convenciones, patrones y herramientas
+        que orientan la construcción de aplicaciones, aportando estructura, productividad y coherencia en equipos de
+        trabajo. La siguiente justificación está orientada a explicar, con rigor y detalle, las finalidades del
+        framework seleccionado, sus aplicaciones más frecuentes, los lenguajes y plataformas sobre los que se
+        apoya, y los prerrequisitos técnicos y conceptuales necesarios para su correcta adopción.
+      </p>
+
+      <p>
+        Aunque la actividad permitirá al profesor especificar el framework concreto en clase, la justificación que se
+        presenta a continuación se redacta de forma genérica y profunda, de modo que pueda adaptarse a frameworks de
+        distintos tipos (front-end, back-end o full-stack). Cuando sea necesario, el lector podrá sustituir ejemplos
+        concretos por referencias al framework indicado en la asignatura. El análisis incorpora aspectos funcionales,
+        arquitectónicos, organizativos y de impacto en procesos de desarrollo y operación.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- Sección a) ¿Para qué sirve? -->
+    <section id="para-que-sirve" class="card">
+      <h2>a) ¿Para qué sirve?</h2>
+      <p>
+        En términos generales, un framework sirve como plataforma de referencia que proporciona un conjunto de
+        abstracciones, utilidades y convenciones para facilitar el desarrollo de aplicaciones de software. Cumple
+        múltiples propósitos:
+      </p>
+
+      <ul>
+        <li><strong>Estandarización y organización:</strong> Establece una estructura de proyecto y convenciones de
+          codificación que fomentan la uniformidad en el código. Esto facilita el trabajo en equipo y la comprensión
+          del código por parte de desarrolladores nuevos en el proyecto.</li>
+
+        <li><strong>Productividad:</strong> Incluye componentes reutilizables y flujos comunes (por ejemplo, gestión de
+          rutas, controladores, modelos, utilidades de validación, sistemas de plantillas o componentes UI) que
+          reducen el tiempo necesario para implementar funcionalidades repetitivas.</li>
+
+        <li><strong>Calidad y buenas prácticas:</strong> Muchos frameworks promueven patrones arquitectónicos (MVC, MVVM,
+          Clean Architecture) y ofrecen herramientas integradas para testing, linting y formateo, lo que ayuda a
+          mantener niveles de calidad consistentes.</li>
+
+        <li><strong>Optimización y rendimiento:</strong> Proveen mecanismos para optimizar la carga y ejecución del
+          software, como sistema de compilación, minificación, code-splitting, caching, prerenderizado o renderizado en
+          servidor (según el tipo de framework).</li>
+
+        <li><strong>Seguridad:</strong> Incorporan medidas de seguridad básicas por defecto (gestión de sesiones,
+          protección frente a CSRF, escaping de datos, validación de entradas) que disminuyen la probabilidad de
+          vulnerabilidades comunes cuando se usan de forma correcta.</li>
+
+        <li><strong>Escalabilidad operacional:</strong> Facilitan la integración con infraestructuras modernas (CDN,
+          serverless, contenedores, orquestadores) y patrones de despliegue que permiten escalar la aplicación según
+          demanda.</li>
+
+        <li><strong>Integración y extensibilidad:</strong> Disponen de ecosistemas de plugins, middlewares o módulos que
+          permiten ampliar la funcionalidad base sin romper la arquitectura del proyecto.</li>
+      </ul>
+
+      <p>
+        En concreto, dependiendo del tipo de framework, sus propósitos se concretan en funcionalidades específicas:
+      </p>
+
+      <h3>Frameworks front-end</h3>
+      <p>
+        En el caso de frameworks orientados al front-end, su función principal es facilitar la construcción de
+        interfaces de usuario ricas e interactivas. Gestionan el ciclo de vida de los componentes, controlan la
+        actualización eficiente del DOM, integran sistemas de routing en el cliente, administran el estado de la
+        aplicación y establecen mecanismos para la comunicación con servicios remotos (APIs). Además, ofrecen
+        soluciones para optimizar el rendimiento percibido por el usuario: carga diferida, renderizado del lado del
+        servidor o generación estática de páginas cuando procede.
+      </p>
+
+      <h3>Frameworks back-end</h3>
+      <p>
+        Para frameworks del lado servidor, sirven para construir APIs, gestionar persistencia de datos, autenticar y
+        autorizar usuarios, procesar lógica de negocio y exponer servicios escalables. Incluyen utilidades para la
+        gestión de conexiones a bases de datos, mapeo objeto-relacional (ORM), manejo de middlewares, logging y control
+        de errores, facilitando la construcción de backends robustos y con prácticas de seguridad integradas.
+      </p>
+
+      <h3>Frameworks full-stack</h3>
+      <p>
+        Los frameworks full-stack combinan capacidades de front-end y back-end, permitiendo construir aplicaciones
+        completas bajo un mismo entorno. En este contexto, el framework sirve para unificar el desarrollo, reducir
+        la fricción entre cliente y servidor, y proporcionar rutas, APIs, renderizado y despliegue coordinados.
+      </p>
+
+      <h3>Beneficios estratégicos</h3>
+      <p>
+        Más allá de los aspectos técnicos, un framework sirve a nivel organizativo y estratégico: facilita la
+        aceleración del time-to-market, reduce costos operativos de mantenimiento, promueve la transferencia de
+        conocimiento entre proyectos y mejora la capacidad de la organización para iterar sobre el producto con
+        seguridad. En proyectos educativos y formativos, además, un framework sirve como vehículo de aprendizaje de
+        patrones industriales y prácticas modernas aplicables en el mundo laboral.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- Sección b) ¿Qué aplicaciones tiene? -->
+    <section id="aplicaciones" class="card">
+      <h2>b) ¿Qué aplicaciones tiene?</h2>
+      <p>
+        Las aplicaciones prácticas de un framework son múltiples y dependen del dominio, los requisitos no
+        funcionales (rendimiento, disponibilidad, seguridad) y los objetivos del producto. A continuación se
+        describen las aplicaciones más relevantes, con ejemplos y justificación técnica.
+      </p>
+
+      <h3>1. Sitios web estáticos y blogs</h3>
+      <p>
+        Muchos frameworks soportan la generación estática de contenido (SSG), lo que es ideal para sitios con contenido
+        relativamente estable: blogs, documentación, portafolios y microsites. Las páginas pre-renderizadas se sirven
+        muy rápido desde CDN y mejoran la indexación por motores de búsqueda, lo que es esencial para proyectos de
+        marketing y contenido.
+      </p>
+
+      <h3>2. Aplicaciones de comercio electrónico</h3>
+      <p>
+        El comercio electrónico exige alto rendimiento, SEO para páginas de producto, y experiencia de usuario fluida.
+        Un framework permite combinar páginas estáticas para catálogos con renderizado dinámico para carritos y
+        cuentas de usuario, implementar estrategias de cache y revalidación incremental, y conectar pasarelas de
+        pago y servicios externos de inventario.
+      </p>
+
+      <h3>3. Plataformas SaaS y aplicaciones empresariales</h3>
+      <p>
+        Aplicaciones empresariales (SaaS) requieren gestión de usuarios, seguridad, roles, auditoría y escalado. Los
+        frameworks aportan plantillas arquitectónicas para implementar autenticación, autorización, multi-tenant,
+        logging y pruebas automatizadas. También agilizan la integración con servicios de correo, analítica y
+        procesamiento de pagos.
+      </p>
+
+      <h3>4. Dashboards y aplicaciones analíticas</h3>
+      <p>
+        Para dashboards que consumen datos en tiempo real o próximos al tiempo real, los frameworks posibilitan la
+        integración con WebSockets, streaming y servicios de mensajería, así como herramientas para la representación
+        eficiente de grandes volúmenes de datos (gráficas, tablas virtualizadas y componentes reutilizables).
+      </p>
+
+      <h3>5. APIs y microservicios</h3>
+      <p>
+        En arquitecturas orientadas a servicios, un framework back-end facilita la creación de APIs REST/GraphQL,
+        gestión de contratos, versionado y observabilidad (tracing, métricas). También facilita la creación de
+        microservicios si incorpora un ecosistema modular y herramientas para despliegue en contenedores y orquestación.
+      </p>
+
+      <h3>6. Aplicaciones móviles y PWA</h3>
+      <p>
+        Algunos frameworks permiten la creación de aplicaciones híbridas o progresivas (PWA). Gracias a herramientas de
+        empaquetado y generación de manifiestos, es posible ofrecer experiencias instalables y con capacidades offline,
+        integrando estrategias de caching y sincronización.
+      </p>
+
+      <h3>7. Prototipos y MVP</h3>
+      <p>
+        La rapidez de desarrollo es esencial en fases tempranas del producto. Un framework permite construir prototipos
+        funcionales y MVPs que validen hipótesis de negocio con menor coste de desarrollo, acelerando la toma de
+        decisiones y la iteración con usuarios reales.
+      </p>
+
+      <h3>8. Integración con servicios en la nube y DevOps</h3>
+      <p>
+        Los frameworks modernos ofrecen integración con pipelines CI/CD, sistemas de gestión de secretos, despliegue a
+        plataformas serverless y soporte para variables de entorno. Esto permite llevar la aplicación desde desarrollo
+        hasta producción con un proceso reproducible y auditable.
+      </p>
+
+      <h3>9. Educación e investigación</h3>
+      <p>
+        En contextos académicos, los frameworks sirven como base para enseñar conceptos de ingeniería de software,
+        arquitectura, testing y buenas prácticas. Su uso en proyectos educativos facilita la entrada de estudiantes en
+        entornos reales y les proporciona experiencia con herramientas industriales.
+      </p>
+
+      <p>
+        En resumen, las aplicaciones de un framework abarcan desde proyectos personales sencillos hasta plataformas
+        empresariales complejas; su valor reside en la capacidad de ofrecer soluciones coherentes y reutilizables a
+        problemas recurrentes del desarrollo.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- Sección c) ¿Sobre qué lenguajes se apoya? -->
+    <section id="lenguajes" class="card">
+      <h2>c) ¿Sobre qué lenguajes se apoya?</h2>
+      <p>
+        La elección de los lenguajes sobre los que se apoya un framework es determinante para su ecosistema, su
+        rendimiento y su adopción en la industria. A continuación se describen con detalle los entornos y lenguajes
+        comunes que suelen sustentar frameworks modernos, así como la interoperabilidad con otras tecnologías.
+      </p>
+
+      <h3>Lenguaje principal</h3>
+      <p>
+        Todo framework tiene un lenguaje principal en torno al cual se define su sintaxis, herramientas de
+        compilación y runtime. Por ejemplo, frameworks JavaScript se apoyan en JavaScript/TypeScript, frameworks de
+        backend pueden apoyarse en Python, Java, C# o Go, y frameworks full-stack podrían integrar más de un lenguaje
+        según el enfoque.
+      </p>
+
+      <h3>JavaScript y TypeScript</h3>
+      <p>
+        En el ecosistema web, JavaScript sigue siendo el lenguaje predominante en el navegador y, junto con
+        TypeScript (su superconjunto tipado), constituye la base de múltiples frameworks front-end y algunos full-stack.
+        TypeScript es ampliamente adoptado por su capacidad de detectar errores en tiempo de compilación, mejorar la
+        mantenibilidad y facilitar el refactorizado. Los frameworks que soportan TypeScript ofrecen tipado estático y
+        mejores experiencias de edición (autocompletado, navegación de símbolos).
+      </p>
+
+      <h3>Lenguajes del lado servidor</h3>
+      <p>
+        En back-end, frameworks se construyen sobre lenguajes con entornos de ejecución robustos. Algunos ejemplos:
+      </p>
+      <ul>
+        <li><strong>Node.js (JavaScript):</strong> Popular en arquitecturas event-driven, muy usado para APIs y aplicaciones
+          full-stack JavaScript.</li>
+        <li><strong>Python:</strong> Elegido por su sintaxis sencilla y ecosistema científico; frameworks populares como Django
+          o Flask lo usan para APIs y aplicaciones web.</li>
+        <li><strong>Java / Kotlin:</strong> Preferidos en entornos empresariales por la estabilidad y el rendimiento; frameworks
+          como Spring Boot los utilizan para soluciones críticas.</li>
+        <li><strong>C# (.NET):</strong> Utilizado en entornos corporativos y para aplicaciones que requieren integración con
+          tecnologías Microsoft.</li>
+        <li><strong>Go:</strong> Adoptado para microservicios por su eficiencia y concurrencia ligera.</li>
+      </ul>
+
+      <h3>Lenguajes de marcado y estilos</h3>
+      <p>
+        Independientemente del lenguaje principal, los frameworks web interactúan con lenguajes de presentación:
+      </p>
+      <ul>
+        <li><strong>HTML:</strong> Estructura semántica del contenido.</li>
+        <li><strong>CSS / preprocesadores (SASS, LESS):</strong> Estilos y layout.</li>
+        <li><strong>Formatos de datos (JSON, XML, YAML):</strong> Intercambio de información entre cliente y servidor.</li>
+      </ul>
+
+      <h3>Interoperabilidad</h3>
+      <p>
+        Un aspecto clave es la capacidad del framework de interoperar con servicios escritos en otros lenguajes. A
+        través de APIs REST/GraphQL, colas de mensajes o servicios gRPC, un framework puede integrarse en sistemas
+        heterogéneos, lo que permite su adopción en arquitecturas ya existentes sin necesidad de reescribir servicios
+        en un único lenguaje.
+      </p>
+
+      <h3>Herramientas y ecosistema</h3>
+      <p>
+        Además de los lenguajes, el ecosistema de herramientas (gestores de paquetes, compiladores, linters, formatters,
+        bundlers) es parte del soporte del framework. Por ejemplo: npm/yarn/pnpm para JavaScript, pip o Poetry para
+        Python, Maven/Gradle para Java, o dotnet CLI para C#. Estas herramientas garantizan que el framework se integre
+        con prácticas modernas de desarrollo.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- Sección d) ¿Qué prerrequisitos necesita? -->
+    <section id="prerrequisitos" class="card">
+      <h2>d) ¿Qué prerrequisitos necesita?</h2>
+      <p>
+        La adopción efectiva de un framework exige una serie de prerrequisitos técnicos y conceptuales. Estos
+        prerrequisitos pueden dividirse en conocimientos previos, herramientas y prácticas organizativas.
+      </p>
+
+      <h3>Conocimientos previos recomendados</h3>
+      <ul>
+        <li><strong>Dominio del lenguaje base:</strong> Comprender el lenguaje sobre el que se apoya el framework (por
+          ejemplo, JavaScript/TypeScript, Python, Java) es imprescindible para escribir código efectivo y depurarlo.</li>
+
+        <li><strong>Fundamentos de arquitectura de software:</strong> Conocer patrones arquitect
+

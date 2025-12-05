@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Utilización del Framework - Presentación Universitaria</title>
+  <!-- Nota: En Angular, no necesitas <link> aquí; los estilos se enlazan en el TS con styleUrls -->
+</head>
+<body>
+  <!-- Sidebar con índice (visible por defecto) -->
+  <aside class="sidebar">
+    <h3>Índice</h3>
+    <ul>
+      <li><a href="#intro">4. Utilización del Framework</a></li>
+      <li><a href="#crear-app">4.a Crear App Base</a></li>
+      <li><a href="#visualizar">4.b Visualizar Resultados</a></li>
+    </ul>
+  </aside>
+  <div class="contenedor">
+  	<img src="\images\Imagen5.png" alt="Logo">
+  </div> 
+  <!-- Contenedor principal con animaciones (sin bindings dinámicos) -->
+  <main>
+    <!-- Sección de introducción en una card destacada -->
+    <section id="intro" class="card highlight">
+      <h1>4. Utilización del Framework</h1>
+      <p>
+        La utilización de un framework de desarrollo web moderno constituye una de las fases más críticas dentro del proceso completo de adopción tecnológica en proyectos de software. Aunque la elección del framework ya ha sido previamente justificada en términos de capacidades técnicas, soporte comunitario, estabilidad y proyección futura, la etapa de utilización representa el punto en el que dicho marco de trabajo comienza a mostrar su verdadero valor en la práctica. La comprensión adecuada de cómo se inicia, estructura, pone en marcha y visualiza una aplicación creada bajo este framework es imprescindible para que los desarrolladores puedan obtener una experiencia fluida, productiva y coherente con los objetivos del proyecto. Dentro del contexto académico y profesional, este apartado busca ofrecer una explicación detallada, minuciosa y sistemática de los aspectos fundamentales asociados a la puesta en marcha y ejecución básica de una aplicación creada con el framework seleccionado.
+      </p>
+      <p>
+        Al abordar la utilización del framework, es necesario adentrarse en una serie de conceptos iniciales que permiten comprender cómo su arquitectura, sus herramientas internas y la filosofía de desarrollo que propone impactan en el flujo de trabajo cotidiano del programador. Por lo general, los frameworks modernos están diseñados para ofrecer un entorno de desarrollo altamente organizado, donde la estructura de carpetas, los archivos de configuración, los scripts de ejecución y los mecanismos de visualización de resultados están claramente definidos y optimizados para brindar una experiencia consistente. Sin embargo, incluso cuando estos elementos vienen preconfigurados, es importante que el desarrollador comprenda en profundidad cómo interactúan entre sí y cómo facilitan la creación de una aplicación base que pueda ser posteriormente ampliada según las necesidades específicas del proyecto.
+      </p>
+      <!-- Lista estática de conceptos clave -->
+      <h3>Conceptos Clave Iniciales</h3>
+      <ul>
+        <li>Arquitectura organizada</li>
+        <li>Herramientas preconfiguradas</li>
+        <li>Flujo de trabajo consistente</li>
+      </ul>
+      <p>
+        La creación de una aplicación base representa el primer contacto real entre el desarrollador y el entorno proporcionado por el framework. Este proceso normalmente involucra la ejecución de comandos iniciales, la instalación o verificación de dependencias, la configuración del entorno local, la generación automática de estructuras predefinidas y la inclusión de componentes básicos que sirven como cimiento para desarrollos posteriores. Por ello, conocer los pasos fundamentales para generar una aplicación inicial es esencial para cualquier profesional que necesite trabajar con este tipo de tecnologías, ya sea en el ámbito formativo, en un entorno laboral o como parte de proyectos de investigación o innovación. Esta aplicación base constituye un modelo mínimo, pero completamente funcional, que permite validar el correcto funcionamiento del framework e iniciar la progresiva construcción de funcionalidades.
+      </p>
+      <p>
+        Una vez creada la aplicación base, el siguiente aspecto fundamental dentro de la utilización del framework consiste en la visualización de los resultados de la ejecución. En proyectos modernos de desarrollo web, esto implica la puesta en marcha de un servidor de desarrollo local que facilite la observación en tiempo real de los cambios realizados en el código. Las herramientas provistas por los frameworks actuales suelen incluir mecanismos de recarga automática, compilación incremental, actualización del navegador y sistemas de monitorización que permiten detectar errores o advertencias durante la fase de ejecución. Por lo tanto, entender cómo se visualizan los resultados, cómo se inicia el servidor, cómo se accede a la aplicación desde el navegador y cómo se interpretan los mensajes que proporciona la consola son elementos esenciales de la práctica cotidiana del desarrollo con frameworks.
+      </p>
+      <p>
+        A continuación, se explican en detalle los procedimientos, conceptos y fundamentos asociados a estos dos aspectos esenciales de la utilización del framework: la creación de una aplicación base y la visualización de los resultados de ejecución. Ambas áreas se abordan con un enfoque completamente descriptivo, exponiendo las ideas clave que cualquier desarrollador debe conocer para manejarse adecuadamente en este entorno tecnológico.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- Sección 4.a con contenido visible -->
+    <section id="crear-app" class="card">
+      <h2>4.a ¿Cómo empezar a crear una aplicación base?</h2>
+      <button class="btn-toggle">Mostrar Detalles</button>  <!-- Sin funcionalidad -->
+      <div class="expandable-content">
+        <p>
+          La creación de una aplicación base constituye el punto de partida para trabajar con cualquier framework moderno. Aunque cada framework tiene sus particularidades, existen una serie de principios comunes que pueden observarse en la mayoría de ellos. El objetivo principal de esta fase es generar la estructura mínima que permita al desarrollador comenzar a incorporar funcionalidades adicionales sin necesidad de configurar manualmente aspectos esenciales del proyecto. La posibilidad de crear esta base inicial mediante un conjunto reducido de comandos se ha convertido en uno de los grandes atractivos de los frameworks contemporáneos, ya que agiliza el arranque del proyecto y garantiza que todos los desarrolladores comiencen desde un punto homogéneo.
+        </p>
+        <!-- Tabla estática de pasos -->
+        <table>
+          <thead>
+            <tr>
+              <th>Paso</th>
+              <th>Descripción</th>
+              <th>Comando Ejemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Verificar entorno (e.g., Node.js)</td>
+              <td><code>node --version</code></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ejecutar comando de creación</td>
+              <td><code>ng new my-app</code></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Instalar dependencias</td>
+              <td><code>npm install</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          En resumen, comenzar a crear una aplicación base con un framework moderno requiere comprender los siguientes elementos esenciales: disponibilidad de un entorno adecuado, ejecución del comando de creación, generación automática de la estructura, inicialización del archivo de dependencias, incorporación de archivos de configuración y revisión del punto de entrada del proyecto. Este proceso representa el inicio formal del desarrollo y proporciona las herramientas necesarias para avanzar hacia la fase de visualización y ejecución.
+        </p>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Sección 4.b con contenido visible -->
+    <section id="visualizar" class="card">
+      <h2>4.b ¿Cómo visualizar los resultados de la ejecución?</h2>
+      <button class="btn-toggle">Mostrar Detalles</button>  <!-- Sin funcionalidad -->
+      <div class="expandable-content">
+        <p>
+          Una vez creada la aplicación base, la visualización de los resultados de ejecución se convierte en un elemento central dentro del proceso de desarrollo. La posibilidad de observar en tiempo real cómo se comporta la aplicación, cómo se renderizan los componentes, cómo responden las rutas y cómo interactúan los elementos lógicos permite que el desarrollador valide continuamente su trabajo. En los frameworks modernos, la visualización se realiza mediante un servidor de desarrollo local que se inicia a través de un comando específico. Este servidor generalmente incorpora características que facilitan la supervisión, depuración y actualización instantánea del código.
+        </p>
+        <h3>Aspectos Esenciales para Visualizar</h3>
+        <ol>
+          <li>Iniciar servidor de desarrollo</li>
+          <li>Acceder vía navegador</li>
+          <li>Usar recarga automática</li>
+          <li>Revisar consolas para errores</li>
+        </ol>
+        <p>
+          En conclusión, visualizar los resultados de ejecución de una aplicación basada en un framework moderno implica comprender el uso del servidor local, la recarga automática, la interpretación de mensajes en la consola, la interacción con el navegador, la revisión de la estructura interna del proyecto, la evaluación del rendimiento, la inspección responsiva y la validación de comportamientos. Dominar estos aspectos es esencial para obtener una experiencia de desarrollo óptima y asegurar que la aplicación se construye de forma correcta desde sus primeras etapas.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer académico -->
+  <footer>
+    <p>&copy; 2023 Universidad - Presentación sobre Frameworks de Desarrollo Web. Desarrollado con Angular.</p>
+  </footer>
+</body>
+</html>

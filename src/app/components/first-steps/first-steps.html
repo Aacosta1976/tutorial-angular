@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>3. Primeros Pasos – Hola Mundo</title>
+    <!-- Nota: En Angular, los estilos se enlazan en el TS con styleUrls -->
+</head>
+<body>
+
+<!-- Sidebar con índice (visible por defecto) -->
+<aside class="sidebar">
+    <h3>Índice</h3>
+    <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#primera-aproximacion">3.a ¿Cómo realizar una primera aproximación?</a></li>
+    </ul>
+</aside>
+<div class="contenedor">
+	<img src="\images\Imagen4.png" alt="Logo">
+</div> 
+<!-- Contenedor principal -->
+<main>
+
+<!-- Sección de introducción en una card destacada -->
+<section id="introduccion" class="card highlight">
+<h1>3. Primeros pasos</h1>
+
+<p>
+    Una vez que el framework ha sido correctamente instalado y se han configurado todas las herramientas necesarias para su 
+    funcionamiento, el siguiente paso consiste en realizar una primera aproximación práctica que permita verificar que el entorno 
+    está operativo. Este proceso, tradicionalmente conocido como “Hola Mundo”, representa el primer contacto directo entre el 
+    desarrollador y el framework, y tiene como propósito confirmar que el flujo básico de ejecución funciona como se espera.  
+    A pesar de tratarse de un ejemplo extremadamente simple, su importancia radica en que permite validar aspectos esenciales como 
+    la estructura del proyecto, la correcta interpretación del código por parte del framework, el funcionamiento de los comandos de 
+    ejecución, la ausencia de errores de configuración y la adecuada conexión entre los distintos componentes del sistema.
+</p>
+
+<p>
+    El apartado que sigue presenta una descripción exhaustiva del proceso para crear un proyecto básico que muestre un mensaje 
+    simple, normalmente “Hola Mundo”, lo que constituye el punto de partida para desarrollos posteriores de mayor complejidad. 
+    Aunque los detalles exactos del código pueden variar según el framework elegido por el profesor en clase, la lógica general 
+    detrás de este primer paso es equivalente en la mayoría de frameworks modernos y permite al estudiante comprender la dinámica 
+    inicial de trabajo.
+</p>
+</section>
+
+<hr>
+
+<!-- Sección 3.a -->
+<section id="primera-aproximacion" class="card">
+<h2>3.a. Cómo realizar una primera aproximación (“Hola Mundo”)</h2>
+
+<p>
+    El objetivo principal de esta primera aproximación es construir un proyecto mínimo que pueda ejecutarse sin errores y que 
+    demuestre que el framework reconoce correctamente la estructura del código. Para ello, se partirá del entorno ya instalado 
+    previamente y se procederá a generar un proyecto nuevo, o bien a construir un archivo inicial que represente la base del 
+    funcionamiento del framework.  
+    Esta primera aproximación permite al desarrollador tomar confianza en el proceso, identificar dónde se ubican los archivos 
+    principales, entender cómo se ejecuta el servidor o el entorno de compilación del framework y observar cómo se representa la 
+    salida por pantalla, por consola o mediante un navegador web, dependiendo del tipo de framework.
+</p>
+
+<h3>1. Creación del proyecto base</h3>
+
+<p>
+    En la mayoría de los frameworks, el primer paso consiste en crear un proyecto base. Esto suele realizarse mediante un comando 
+    proporcionado por una herramienta de línea de comandos asociada al framework. Este comando crea una estructura inicial que 
+    incluye carpetas, archivos de configuración y, en algunos casos, ejemplos funcionales que pueden servir como referencia.  
+    Aunque el nombre del comando puede variar según la tecnología, los ejemplos más comunes incluyen:
+</p>
+
+<ul>
+    <li><strong>framework-cli create my-app</strong></li>
+    <li><strong>create-framework-app proyecto</strong></li>
+    <li><strong>framework new hola-mundo</strong></li>
+    <li><strong>npm create framework-app nombre</strong></li>
+</ul>
+
+<p>
+    Independientemente del comando, la finalidad es siempre la misma: generar un entorno mínimo que contenga los elementos 
+    esenciales para ejecutar el primer ejemplo. Tras ejecutar el comando, se genera una estructura de carpetas que incluye archivos 
+    como configuraciones del entorno, dependencias iniciales y un archivo principal desde el que se ejecutará el código del ejemplo.
+</p>
+
+<h3>2. Exploración de la estructura del proyecto</h3>
+
+<p>
+    Una vez creado el proyecto, es fundamental comprender la estructura de directorios generada. Aunque la organización exacta puede 
+    variar, existen elementos que suelen estar presentes en todo framework:
+</p>
+
+<ul>
+    <li><strong>Carpeta principal del proyecto:</strong> contiene el código fuente.</li>
+    <li><strong>Carpeta de configuraciones:</strong> alberga parámetros del entorno y archivos de inicialización.</li>
+    <li><strong>Carpeta pública o estática:</strong> incluye recursos accesibles públicamente, si el framework es web.</li>
+    <li><strong>Archivo inicial o punto de entrada:</strong> suele ser un archivo como <em>index.js</em>, <em>app.py</em>, 
+        <em>main.php</em> o similar.</li>
+    <li><strong>Archivo de dependencias:</strong> especifica las bibliotecas que requiere el proyecto.</li>
+</ul>
+
+<p>
+    Para el primer ejemplo, el archivo que más interesa es el punto de entrada, ya que es allí donde se escribirá el “Hola Mundo” o 
+    donde se observará cómo el framework interpreta la salida inicial.  
+    Explorar esta estructura permite que el desarrollador adquiere una visión clara de cómo organiza el framework sus componentes, 
+    lo cual resultará crucial en fases posteriores del proyecto.
+</p>
+
+<h3>3. Creación del archivo “Hola Mundo”</h3>
+
+<p>
+    El siguiente paso consiste en crear o modificar un archivo que contenga las instrucciones necesarias para mostrar el mensaje 
+    “Hola Mundo”. Dependiendo del framework, esta operación puede realizarse de distintas maneras, ya que algunos frameworks están 
+    orientados a la consola, otros a aplicaciones web, otros al procesamiento de datos y otros a aplicaciones gráficas.  
+    A pesar de estas diferencias, la idea fundamental es siempre la misma: generar un archivo que invoque alguna funcionalidad básica 
+    del framework para mostrar un texto sencillo.
+</p>
+
+<p>Algunos ejemplos típicos que suelen encontrarse en frameworks modernos pueden incluir:</p>
+
+<ul>
+    <li>
+        <strong>En frameworks web:</strong> creación de una ruta que devuelva una respuesta con el texto “Hola Mundo”.
+    </li>
+    <li>
+        <strong>En frameworks para aplicaciones de consola:</strong> inclusión de una función que imprima el mensaje al ejecutar un 
+        comando desde el terminal.
+    </li>
+    <li>
+        <strong>En frameworks frontend:</strong> renderización de un componente que muestre el mensaje en la pantalla del navegador.
+    </li>
+</ul>
+
+<p>
+    Aunque los detalles del código dependen del framework concreto asignado por el profesor, el objetivo general es confirmar que el 
+    framework interpreta correctamente los archivos del proyecto y que se puede desplegar un mensaje básico sin errores.
+</p>
+
+<h3>4. Ejecución del proyecto</h3>
+
+<p>
+    Tras crear el archivo del “Hola Mundo”, el siguiente paso es ejecutar el proyecto utilizando el comando correspondiente.  
+    Este comando, también variable según el framework, suele tener nombres como:
+</p>
+
+<ul>
+    <li><strong>npm run dev</strong></li>
+    <li><strong>framework run</strong></li>
+    <li><strong>python manage.py start</strong></li>
+    <li><strong>php framework serve</strong></li>
+</ul>
+
+<p>
+    La ejecución del proyecto permite observar la salida generada por el ejemplo. En algunos casos, esta salida aparece en la 
+    terminal; en otros, se abre un servidor local accesible desde un navegador web; y en ocasiones, se produce una salida gráfica 
+    dentro de una ventana de la aplicación.
+</p>
+
+<p>
+    Si el mensaje “Hola Mundo” aparece correctamente, significa que:
+</p>
+
+<ul>
+    <li>el framework está instalado adecuadamente,</li>
+    <li>las dependencias están correctamente resueltas,</li>
+    <li>la estructura del proyecto es válida,</li>
+    <li>el punto de entrada del proyecto funciona,</li>
+    <li>y el entorno del desarrollador está listo para avanzar a ejemplos más complejos.</li>
+</ul>
+
+<h3>5. Solución de errores comunes</h3>
+
+<p>
+    Aunque el objetivo del “Hola Mundo” es simple, durante su ejecución pueden surgir errores derivados de configuraciones previas o 
+    de incompatibilidades en las versiones. Por ello, resulta útil identificar algunos problemas comunes que suelen aparecer en esta 
+    etapa.
+</p>
+
+<p>
+    Entre los errores más frecuentes se encuentran:
+</p>
+
+<ul>
+    <li><strong>Dependencias no instaladas correctamente:</strong> generalmente se soluciona ejecutando nuevamente el comando de 
+        instalación de paquetes.</li>
+    <li><strong>Versiones incompatibles:</strong> puede implicar instalar versiones específicas del lenguaje o del framework.</li>
+    <li><strong>Errores de sintaxis:</strong> comunes cuando se copia o adapta código sin revisar el formato.</li>
+    <li><strong>Estructura incorrecta de archivos:</strong> sucede cuando el archivo del “Hola Mundo” no se coloca en la ruta esperada.</li>
+    <li><strong>Configuración del servidor local:</strong> errores relacionados con puertos ocupados o permisos insuficientes.</li>
+</ul>
+
+<p>
+    El proceso de identificar y resolver estos problemas forma parte del aprendizaje fundamental del uso del framework. 
+    Comprender cómo diagnosticar errores iniciales permite al desarrollador avanzar con mayor seguridad en etapas más complejas del 
+    proyecto.
+</p>
+
+<h3>6. Verificación del entorno funcional</h3>
+
+<p>
+    Una vez ejecutado el “Hola Mundo”, es importante realizar una verificación final del entorno. Esto implica comprobar que todos 
+    los elementos esenciales del framework funcionan correctamente.  
+    Esta verificación puede incluir acciones como:
+</p>
+
+<ul>
+    <li>validar que los archivos detectan cambios en tiempo real (si existe modo de desarrollo),</li>
+    <li>confirmar que las rutas o componentes básicos se actualizan adecuadamente,</li>
+    <li>comprobar que el servidor local no presenta advertencias,</li>
+    <li>verificar que no existen problemas de permisos o de compilación.</li>
+</ul>
+
+<p>
+    Si todo funciona correctamente, puede concluirse que la instalación, la estructura del proyecto y la primera aproximación con 
+    el framework han sido exitosas. Este punto marca una transición natural hacia la construcción de ejemplos más elaborados, donde 
+    se integrarán componentes, servicios o módulos que forman parte del diseño más complejo del framework.
+</p>
+
+<h3>7. Importancia del “Hola Mundo” en el aprendizaje del framework</h3>
+
+<p>
+    Aunque pueda parecer trivial, el “Hola Mundo” representa un hito importante en el proceso de aprendizaje. A través de esta 
+    prueba se validan conceptos clave como:
+</p>
+
+<ul>
+    <li>cómo el framework se inicializa,</li>
+    <li>cómo procesa las instrucciones,</li>
+    <li>cómo renderiza o muestra información,</li>
+    <li>cómo maneja archivos y rutas,</li>
+    <li>cómo responde a comandos del entorno de ejecución.</li>
+</ul>
+
+<p>
+    Estos elementos son esenciales para el dominio completo del framework. Una correcta comprensión de estos aspectos facilita la 
+    integración de funcionalidades más avanzadas, ya que todas ellas se construyen sobre los principios básicos que se evidencian en 
+    el “Hola Mundo”.
+</p>
+
+<h3>8. Ampliación del ejemplo básico</h3>
+
+<p>
+    Tras obtener el primer resultado satisfactorio, es común que el desarrollador amplíe el ejemplo inicial agregando pequeñas 
+    funcionalidades que le permitan aprender progresivamente. Algunas adiciones típicas incluyen:
+</p>
+
+<ul>
+    <li>modificar el texto mostrado,</li>
+    <li>crear nuevas rutas o componentes,</li>
+    <li>añadir estilos básicos,</li>
+    <li>integrar variables de entorno simples,</li>
+    <li>hacer pruebas de recarga automática,</li>
+    <li>experimentar con el sistema de plantillas o interfaces del framework.</li>
+</ul>
+
+<p>
+    Estos primeros experimentos sirven para solidificar los conceptos fundamentales del framework y para familiarizarse con su 
+    sintaxis, filosofía y características distintivas.
+</p>
+
+<h3>9. Conclusión</h3>
+
+<p>
+    Realizar una primera aproximación con el framework mediante un ejemplo “Hola Mundo” es un paso esencial en el proceso de 
+    aprendizaje. Aunque el objetivo del ejemplo es simple, su ejecución valida el correcto funcionamiento de todos los elementos 
+    que intervienen en el desarrollo: instalación, configuración, ejecución y renderización básica.  
+    A partir de este punto, el desarrollador adquiere la confianza necesaria para avanzar hacia ejemplos de mayor complejidad, 
+    incorporando gradualmente más funcionalidades y construyendo proyectos completos con el framework elegido por el profesor.
+</p>
+</section>
+
+</main>
+
+<!-- Footer académico -->
+<footer>
+<p>&copy; 2023 Universidad - Presentación sobre Frameworks de Desarrollo Web. Desarrollado con Angular.</p>
+</footer>
+
+</body>
+</html>
