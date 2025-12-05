@@ -1,4 +1,4 @@
-<!doctype html>
+export default `<!doctype html>
 <html lang="es" data-beasties-container="">
 <head>
   <meta charset="utf-8">
@@ -10,3 +10,4 @@
   <app-root></app-root>
 <script src="main-IRBAMGIW.js" type="module"></script></body>
 </html>
+`;

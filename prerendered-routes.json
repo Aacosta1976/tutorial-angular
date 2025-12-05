@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "/": {},
+    "/conclusions": {},
+    "/first-steps": {},
+    "/functioning": {},
+    "/installation": {},
+    "/justification": {},
+    "/resources": {},
+    "/usage": {}
+  }
+}
